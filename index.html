@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Information Andres Pirela</title>
+    </head>
+
+    <body>
+        <div>
+            <h1 class="header">Andrés Eduardo Pirela Fernández</h1>
+            <h2>Computer Science</h2>
+            <h2>4° year</h2>
+            <a href="https://github.com/andrespf02/andrespf02.github.io">My GitHub Page</a>
+            <p>I study Computer Science in Universidad de los Andes in Chile. I 
+                am in 4° year and I like programming and doing sports. In the future, I would like to create 
+                important web applications.
+            </p>
+        </div>
+        <div>
+            <table class="tableper">
+                <link rel="stylesheet" type="text/css" href="index.css">
+                <tr>
+                    <td>Skill</td>
+                    <td>Level</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Advance</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Advance</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>Native</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Add new Information</h2>
+        <input type="text" id="textInput" placeholder="Enter new Information">
+        <button onclick="add()">Add Information</button>
+
+        <div id="newInfo">
+            <p></p>
+        </div>
+
+        <script>
+            function add() {
+                var newI = document.getElementById("textInput").value;
+                document.getElementById("newInfo").innerHTML = "<p>" + newI + "</p>";
+            }
+        </script>
+
+    </body>
+</html>
